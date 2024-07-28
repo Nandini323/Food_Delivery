@@ -1,0 +1,82 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.fooddelevery.modeldata.MainViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FF3B30"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/img_1" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="63dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_logo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Food for Everyone"
+            android:textColor="#FFFFFF"
+            android:textStyle="italic"
+            android:textSize="30sp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_character2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/img_3" />
+
+        <ImageView
+            android:id="@+id/iv_character1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tv_title"
+            android:src="@drawable/img_2" />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="260dp"
+            android:layout_below="@id/tv_title"
+            android:src="@drawable/img_6" />
+        <Button
+            android:id="@+id/btn_get_started"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="50dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="Get started"
+            android:backgroundTint="@color/white"
+            android:textColor="#FF3B30"
+            android:onClick="@{() -> viewModel.onGetStartedClicked()}" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="5dp">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/foodImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/foodName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/foodImage"
+        android:layout_marginStart="8dp"
+        android:text="Food Name"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/foodDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/foodImage"
+        android:layout_below="@id/foodName"
+        android:layout_marginStart="8dp"
+        android:text="Food Description"
+
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/foodPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/foodImage"
+        android:layout_below="@id/foodDescription"
+        android:layout_marginStart="8dp"
+        android:text="Rp 10.000"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/foodDeliveryTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/foodImage"
+        android:layout_below="@id/foodPrice"
+        android:layout_marginStart="8dp"
+        android:text="12 min • 1 km"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/foodRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foodDeliveryTime"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@id/foodImage"
+        android:text="4.9 • 400+ ratings"
+        android:textSize="14sp" />
+</RelativeLayout>
+</androidx.cardview.widget.CardView>
