@@ -9,3 +9,7 @@ Functionality:
    - Maintain added food items in the cart from the details page.
    - Users can remove items from the cart.
    - Refer to the cart page for adding and removing favorite or removing from the cart functionality.
+
+
+https://github.com/user-attachments/assets/3542475e-e949-48a7-9027-37b1373cbe63
+
